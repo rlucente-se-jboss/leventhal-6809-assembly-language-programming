@@ -14,7 +14,6 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 
 ## Full index of all examples and problems
 * [4-1. 8-bit data transfer](./chap04/4-1.asm?plaintext=1)
-* [4-10. 16-bit ones complement](./chap04/4-10.asm?plaintext=1)
 * [4-2. 8-bit addition](./chap04/4-2.asm?plaintext=1)
 * [4-3. shift left 1 bit](./chap04/4-3.asm?plaintext=1)
 * [4-4. mask off most significant four bits](./chap04/4-4.asm?plaintext=1)
@@ -23,6 +22,7 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 * [4-7. find larger of two numbers](./chap04/4-7.asm?plaintext=1)
 * [4-8. 16-bit addition ](./chap04/4-8.asm?plaintext=1)
 * [4-9. table of squares](./chap04/4-9.asm?plaintext=1)
+* [4-10. 16-bit ones complement](./chap04/4-10.asm?plaintext=1)
 * [Problem 4-1. 16-bit data transfer](./chap04/problems/problem-4-1.asm?plaintext=1)
 * [Problem 4-10. 16-bit twos complement](./chap04/problems/problem-4-10.asm?plaintext=1)
 * [Problem 4-2. 8-bit subtraction](./chap04/problems/problem-4-2.asm?plaintext=1)
