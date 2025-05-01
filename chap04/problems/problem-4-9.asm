@@ -1,4 +1,4 @@
-; Problem 4-9. Sum of squares
+; Problem 4-9. sum of squares
 
 ; Calculate the squares of the contents of memory locations $40 and
 ; $41 and add them together. Place the result in memory location $42.

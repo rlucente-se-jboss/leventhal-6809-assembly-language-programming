@@ -1,4 +1,4 @@
-; Problem 7-5. ASCII string to binary number
+; Problem 7-5. ascii string to binary number
 
 ; Convert the eight ASCII characters in memory locations $42 through
 ; $49 to an 8-bit binary number in memory location $41 (the most

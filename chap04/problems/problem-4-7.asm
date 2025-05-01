@@ -1,4 +1,4 @@
-; Problem 4-7. Find smaller of two numbers
+; Problem 4-7. find smaller of two numbers
 
 ; Place the smaller of the contents of memory locations $40 and $41
 ; in memory location $42. Assume that memory locations $40 and $41

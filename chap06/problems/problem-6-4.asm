@@ -1,4 +1,4 @@
-; Problem 6-4. check even parity in ASCII characters
+; Problem 6-4. check even parity in ascii characters
 
 ; Check even parity in a string of ASCII characters. The length of
 ; the string is in memory location $41, and the string itself begins

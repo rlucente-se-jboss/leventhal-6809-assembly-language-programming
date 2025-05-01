@@ -1,4 +1,4 @@
-; Problem 4-5. Set a memory location to all ones
+; Problem 4-5. set a memory location to all ones
 
 ; Set all bits of memory location $40 to ones (0xff)
 

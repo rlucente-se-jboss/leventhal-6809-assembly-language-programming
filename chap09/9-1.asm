@@ -1,4 +1,4 @@
-; 9-2. add entry to list
+; 9-1. add entry to list
 
 ; Add the contents of memory location $40 to a list if it is not
 ; already present in the list. The length of the list is in memory

@@ -1,4 +1,4 @@
-; Problem 4-6. Byte assembly
+; Problem 4-6. byte assembly
 
 ; Combine the four least significant bits of memory locations $40
 ; and $41 into a byte and store the result in memory location $42.

@@ -1,4 +1,4 @@
-; 9-3. add element to queue
+; Problem 9-3. add element to queue
 
 ; Add the address in memory locations $40 and $41 (MSBs in $40) to
 ; a queue. The address of the first element of the queue is in memory

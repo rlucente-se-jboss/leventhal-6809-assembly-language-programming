@@ -1,4 +1,4 @@
-; 9-3b. add element to queue with tail pointer
+; Problem 9-3b. add element to queue with tail pointer
 
 ; Add the address in memory locations $40 and $41 (MSBs in $40) to
 ; a queue. The address of the first element of the queue is in memory
