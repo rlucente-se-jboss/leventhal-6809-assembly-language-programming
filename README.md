@@ -1,4 +1,4 @@
-# Lance Leventhal's "6809 Assembly Language Programming"
+#Lance Leventhal's "6809 Assembly Language Programming"
 This repository contains compilable example code and worked out
 problems for Lance Leventhal's excellent book [6809 Assembly Language Programming](https://colorcomputerarchive.com/repo/Documents/Books/6809%20Assembly%20Language%20Programming%20(Lance%20Leventhal).pdf).
 All of the provided code was run on the [Motorola 6809 Emulator](https://6809.uk/) without error.
@@ -24,7 +24,6 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 * [4-9. table of squares](./chap04/4-9.asm?plaintext=1)
 * [4-10. 16-bit ones complement](./chap04/4-10.asm?plaintext=1)
 * [Problem 4-1. 16-bit data transfer](./chap04/problems/problem-4-1.asm?plaintext=1)
-* [Problem 4-10. 16-bit twos complement](./chap04/problems/problem-4-10.asm?plaintext=1)
 * [Problem 4-2. 8-bit subtraction](./chap04/problems/problem-4-2.asm?plaintext=1)
 * [Problem 4-3. shift left two bits](./chap04/problems/problem-4-3.asm?plaintext=1)
 * [Problem 4-4. mask off least significant four bits](./chap04/problems/problem-4-4.asm?plaintext=1)
@@ -33,6 +32,7 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 * [Problem 4-7. find smaller of two numbers](./chap04/problems/problem-4-7.asm?plaintext=1)
 * [Problem 4-8. 24-bit addition](./chap04/problems/problem-4-8.asm?plaintext=1)
 * [Problem 4-9. sum of squares](./chap04/problems/problem-4-9.asm?plaintext=1)
+* [Problem 4-10. 16-bit twos complement](./chap04/problems/problem-4-10.asm?plaintext=1)
 * [5-1. sum of data](./chap05/5-1.asm?plaintext=1)
 * [5-1b. sum of data](./chap05/5-1b.asm?plaintext=1)
 * [5-2. 16-bit sum of data](./chap05/5-2.asm?plaintext=1)
@@ -92,3 +92,12 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 * [Problem 9-4. 16-bit sort](./chap09/problems/problem-9-4.asm?plaintext=1)
 * [Problem 9-5. using a jump table with a key](./chap09/problems/problem-9-5.asm?plaintext=1)
 * [10-1. converting hexadecimal to ascii](./chap10/10-1.asm?plaintext=1)
+* [10-2. length of a string of characters](./chap10/10-2.asm?plaintext=1)
+* [10-3. maximum value](./chap10/10-3.asm?plaintext=1)
+* [10-4. pattern match](./chap10/10-4.asm?plaintext=1)
+* [10-5. multiple-precision addition](./chap10/10-5.asm?plaintext=1)
+* [Problem 10-1. convert ascii to hexadecimal](./chap10/problems/problem-10-1.asm?plaintext=1)
+* [Problem 10-2. length of a teletypewriter message](./chap10/problems/problem-10-2.asm?plaintext=1)
+* [Problem 10-3. minimum value](./chap10/problems/problem-10-3.asm?plaintext=1)
+* [Problem 10-4. string comparison](./chap10/problems/problem-10-4.asm?plaintext=1)
+* [Problem 10-5. decimal subtraction](./chap10/problems/problem-10-5.asm?plaintext=1)
