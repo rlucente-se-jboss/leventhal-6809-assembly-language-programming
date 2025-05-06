@@ -14,6 +14,15 @@ ASC_CR          equ     $0d
                 fcb     ASC_CR          ; string terminator
                 fdb     pointer         ; starting address of string
                 stb     <result         ; save string length
+
+                lda     #ASC_CR         ; set up next example
+                sta     <pointer
+
+                jsr     stlen           ; determine string length
+                fcb     ASC_CR          ; string terminator
+                fdb     pointer         ; starting address of string
+                stb     <result         ; save string length
+
                 rts
 
 * subroutine stlen
