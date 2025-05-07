@@ -1,4 +1,4 @@
-; 7-3. ascii to decimal
+; 7-3b. ascii to decimal
 
 ; Convert the contents of memory location $40 from an ASCII character
 ; to a decimal digit and store the result in memory location $41. If
