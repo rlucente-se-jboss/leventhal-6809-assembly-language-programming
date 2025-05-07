@@ -1,4 +1,4 @@
-#Lance Leventhal's "6809 Assembly Language Programming"
+# Lance Leventhal's "6809 Assembly Language Programming"
 This repository contains compilable example code and worked out
 problems for Lance Leventhal's excellent book [6809 Assembly Language Programming](https://colorcomputerarchive.com/repo/Documents/Books/6809%20Assembly%20Language%20Programming%20(Lance%20Leventhal).pdf).
 All of the provided code was run on the [Motorola 6809 Emulator](https://6809.uk/) without error.
@@ -59,7 +59,7 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 * [7-1. hexadecimal to ascii](./chap07/7-1b.asm?plaintext=1)
 * [7-2. decimal to seven-segment](./chap07/7-2.asm?plaintext=1)
 * [7-3. ascii to decimal](./chap07/7-3.asm?plaintext=1)
-* [7-3. ascii to decimal](./chap07/7-3b.asm?plaintext=1)
+* [7-3b. ascii to decimal](./chap07/7-3b.asm?plaintext=1)
 * [7-4. bcd to binary](./chap07/7-4.asm?plaintext=1)
 * [7-5. binary number to ascii string](./chap07/7-5-opt.asm?plaintext=1)
 * [7-5. binary number to ascii string](./chap07/7-5.asm?plaintext=1)
@@ -101,3 +101,6 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 * [Problem 10-3. minimum value](./chap10/problems/problem-10-3.asm?plaintext=1)
 * [Problem 10-4. string comparison](./chap10/problems/problem-10-4.asm?plaintext=1)
 * [Problem 10-5. decimal subtraction](./chap10/problems/problem-10-5.asm?plaintext=1)
+* [11-1a. length of a string of characters](./chap11/11-1a.asm?plaintext=1)
+* [11-1b. length of a string of characters](./chap11/11-1b.asm?plaintext=1)
+* [11-2a. multiple-precision addition](./chap11/11-2a.asm?plaintext=1)
