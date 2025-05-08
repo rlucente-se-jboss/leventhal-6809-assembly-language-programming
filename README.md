@@ -105,5 +105,6 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 * [11-1b. length of a string of characters](./chap11/11-1b.asm?plaintext=1)
 * [11-2a. multiple-precision addition](./chap11/11-2a.asm?plaintext=1)
 * [11-2b. multiple-precision addition](./chap11/11-2b.asm?plaintext=1)
-* [12-1a. Delay subroutine](./chap12/12-1a.asm?plaintext=1)
+* [12-1a. delay subroutine](./chap12/12-1a.asm?plaintext=1)
 * [12-1b. delay subroutine](./chap12/12-1b.asm?plaintext=1)
+* [13-1a. pushbutton determine switch closure](./chap13/13-1a.asm?plaintext=1)
