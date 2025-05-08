@@ -1,4 +1,4 @@
-; 12-1a. Delay subroutine
+; 12-1a. delay subroutine
 
 ; The subroutine produces a delay of 1 ms times the contents of
 ; Accumulator A.
