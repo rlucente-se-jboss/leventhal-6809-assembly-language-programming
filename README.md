@@ -108,3 +108,4 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 * [12-1a. delay subroutine](./chap12/12-1a.asm?plaintext=1)
 * [12-1b. delay subroutine](./chap12/12-1b.asm?plaintext=1)
 * [13-1a. pushbutton determine switch closure](./chap13/13-1a.asm?plaintext=1)
+* [13-1b. pushbutton count switch closures](./chap13/13-1b.asm?plaintext=1)
