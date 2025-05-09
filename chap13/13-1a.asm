@@ -1,4 +1,4 @@
-; 13-1a. pushbutton determine switch closure
+; 13-1a. determine pushbutton switch closure
 
 ; Set memory location $40 to one if the button is not being pressed,
 ; and to zero if it is. Button is connected to bit 0 of port A data

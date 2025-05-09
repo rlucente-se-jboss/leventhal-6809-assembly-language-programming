@@ -1,4 +1,4 @@
-; 13-1b. pushbutton count switch closures
+; 13-1b. count pushbutton switch closures
 
 ; Count the number of button closures by incrementing memory location
 ; $40 after each closure. Button is connected to bit 0 of port A data
