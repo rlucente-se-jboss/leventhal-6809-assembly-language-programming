@@ -110,3 +110,5 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 * [13-1a. determine pushbutton switch closure](./chap13/13-1a.asm?plaintext=1)
 * [13-1b. count pushbutton switch closures](./chap13/13-1b.asm?plaintext=1)
 * [13-2a. determine multiple-position (rotary, selector, or thumbwheel) switch position](./chap13/13-2a.asm?plaintext=1)
+* [13-2b. wait for switch position to change (temporary variable on stack)](./chap13/13-2b-stack.asm?plaintext=1)
+* [13-2b. wait for switch position to change](./chap13/13-2b.asm?plaintext=1)
