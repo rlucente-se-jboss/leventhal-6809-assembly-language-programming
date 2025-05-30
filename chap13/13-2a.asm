@@ -3,10 +3,10 @@
 ; The program waits for the switch to be in a specific position and
 ; then stores the position number in memory location $40.
 
-; NB: There is no 6821 PIA at address $20 so this is more informational
-;     than anything else.
+; NB: With the 6809.uk emulator, there is no 6821 PIA at address
+;     $20 so this is more informational than anything else.
 
-pia_a_ctrl      equ     $21             ; PIA port A control register
+pia_ctrl_a      equ     $21             ; PIA port A control register
 pia_ddr_a       equ     $20             ; PIA port A data direction register
 pia_data_a      equ     $20             ; PIA port A data register
 
@@ -27,10 +27,10 @@ dly             decb
 switchpos       fcb     $00
 
                 org     $4000
-start           clr     <pia_a_ctrl     ; address data direction register
+start           clr     <pia_ctrl_a     ; address data direction register
                 clr     <pia_ddr_a      ; make all data lines inputs
                 lda     #%00000100      ; address data register
-                sta     <pia_a_ctrl
+                sta     <pia_ctrl_a
                 clr     <switchpos      ; clear switch position
 
 chksw           ldb     <pia_data_a     ; get current switch value
