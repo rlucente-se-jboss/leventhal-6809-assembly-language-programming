@@ -34,7 +34,7 @@ start           clr     <pia_ctrl_b     ; address data direction register
 
                 lda     #maskn          ; get complement of LED mask
                 coma
-                ora	<pia_data_b     ; set LED bit to 1
+                ora     <pia_data_b     ; set LED bit to 1
                 sta     <pia_data_b
 
 ; turn on the LED after a short delay
@@ -47,7 +47,7 @@ start           clr     <pia_ctrl_b     ; address data direction register
 
                 rts
 
-shortdelay      ldb	#10
+shortdelay      ldb     #10
 delay           decb
                 bne     delay
                 rts
