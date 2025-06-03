@@ -114,5 +114,5 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 * [13-2b. wait for switch position to change](./chap13/13-2b.asm?plaintext=1)
 * [13-3a. turn the light on or off (send a logic one to the led)](./chap13/13-3a.asm?plaintext=1)
 * [13-3b. turn the light on or off (send a logic zero to the led)](./chap13/13-3b.asm?plaintext=1)
-* [13-4a. display a decimal digit](./chap13/13-4a-alternate.asm?plaintext=1)
+* [13-4a. display a decimal digit (blank at end of table)](./chap13/13-4a-alternate.asm?plaintext=1)
 * [13-4a. display a decimal digit](./chap13/13-4a.asm?plaintext=1)

@@ -1,4 +1,4 @@
-; 13-4a. display a decimal digit
+; 13-4a. display a decimal digit (blank at end of table)
 
 ; Display the contents of memory location $40 on a seven-segment
 ; display if it contains a decimal digit. Otherwise, blank the display.
