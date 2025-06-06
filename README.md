@@ -122,3 +122,4 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 * [13-5b. identify key (and rescan if none found)](./chap13/13-5b-alternate.asm?plaintext=1)
 * [13-5b. identify key (using bidirectional feature of PIA)](./chap13/13-5b-bidirectional.asm?plaintext=1)
 * [13-5b. identify key](./chap13/13-5b.asm?plaintext=1)
+* [13-6. an encoded keyboard](./chap13/13-6.asm?plaintext=1)
