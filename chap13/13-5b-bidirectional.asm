@@ -23,7 +23,6 @@ pia_ddr_b       equ     $22             ; PIA port B data direction register
 pia_data_b      equ     $22             ; PIA port B data register
 
                 org     $40
-keynum          rmb     1
 keytable        fcc     '123456789'     ; characters mapped to keys
         
                 org     $4000
@@ -70,6 +69,5 @@ getrow          clr     <pia_data_a     ; ground all columns
                 addb    ,s              ; add columns
 
                 ldx     #keytable       ; index into key table for key number
-                lda     b,x
-                sta     <keynum
+                ldb     b,x
                 puls    a,pc            ; correct stack and return
