@@ -68,9 +68,8 @@ getrow          clr     <pia_data_a     ; ground all columns
                 lda     #3              ; get offset for row
                 mul                     ; result is 0, 3, 6
                 addb    ,s              ; add columns
-                leas    1,s             ; revert stack pointer
 
                 ldx     #keytable       ; index into key table for key number
                 lda     b,x
                 sta     <keynum
-                rts             
+                puls    a,pc            ; correct stack and return
