@@ -13,7 +13,7 @@ pia_ddr_a       equ     $20             ; PIA port A data direction register
 pia_data_a      equ     $20             ; PIA port A data register
 
                 org     $40
-data            fcb     $ff             ; data to output to d/a converter
+data            rmb     1               ; data read from ADC
 
                 org     $4000
 start           clr     <pia_ctrl_a     ; address data direction register
