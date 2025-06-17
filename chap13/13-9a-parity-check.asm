@@ -25,9 +25,6 @@ start           clr     <pia_ctrl_a     ; address data direction register
                 lda     #%00000100      ; address data register
                 sta     <pia_ctrl_a
 
-                clrb                    ; for parity count of 1's
-                stb     <badparity
-
 wtstb           lda     <pia_data_a     ; is there a start bit?
                 bmi     wtstb           ;   no, wait
                 jsr     dly2            ;   yes, delay half bit time to
@@ -41,12 +38,39 @@ ttyrcv          jsr     delay           ; wait 1 bit time
                 rora                    ; combine with previous data
                 bcc     ttyrcv          ; continue until count bit
                                         ;   traverses data
+                sta     <data           ; save result
+
+; parity check is clever as it on average only checks 7 bits of the
+; data, with the loop consisting of nine clock cycles per bit
+;
+; data          values  iterations      total iterations
+; xxxxxxx1      128     8               128*8 = 1024
+; xxxxxx10       64     7                64*7 =  448
+; xxxxx100       32     6                32*6 =  192
+; xxxx1000       16     5                16*5 =   80
+; xxx10000        8     4                 8*4 =   32
+; xx100000        4     3                 4*3 =   12
+; x1000000        2     2                 2*2 =    4
+; 10000000        1     1                 1*1 =    1
+; 00000000        1     1                 1*1 =    1
+;
+; total         256                             1794
+;
+; average iterations = 1794 / 256 = 7.0078125
+; average cycles ~ 63
+
+                clrb                    ; b is count of 1's for parity
+                stb     <badparity
+chbit           asla                    ; shift a data bit to carry
+                adcb    #0              ; if bit is 1, add 1 to bit count
+                tsta                    ; keep counting until data is zero
+                bne     chbit
+
                 andb    #1              ; check if parity is even
                 beq     parityeven      ;   yes, exit
                 stb     <badparity      ;   no, set flag for bad parity
 
-parityeven      sta     <data           ; save result
-                rts
+parityeven      rts
 
 dly2            ldx     #$0236          ; count for 4.55 ms
                 bra     dly             ;   (clock rate = 1 MHz)
