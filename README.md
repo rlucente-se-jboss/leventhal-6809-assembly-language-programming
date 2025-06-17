@@ -126,5 +126,5 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 * [13-7. send data to d/a converter (using manual mode)](./chap13/13-7-manual.asm?plaintext=1)
 * [13-7. send data to d/a converter](./chap13/13-7.asm?plaintext=1)
 * [13-8. input from ADC converter](./chap13/13-8.asm?plaintext=1)
-* [13-9a. read data from a teletypewriter (TTY) ](./chap13/13-9a-parity-check.asm?plaintext=1)
+* [13-9a. read data from a teletypewriter (TTY) with even parity check](./chap13/13-9a-parity-check.asm?plaintext=1)
 * [13-9a. read data from a teletypewriter (TTY) ](./chap13/13-9a.asm?plaintext=1)
