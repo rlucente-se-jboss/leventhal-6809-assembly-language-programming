@@ -40,7 +40,7 @@ ttyrcv          jsr     delay           ; wait 1 bit time
 ; parity check is clever as it on average only checks 7 bits of the
 ; data, with the loop consisting of nine clock cycles per bit
 ;
-; data          values  iterations      total iterations
+; data          values  iterations      weighted iterations
 ; xxxxxxx1      128     8               128*8 = 1024
 ; xxxxxx10       64     7                64*7 =  448
 ; xxxxx100       32     6                32*6 =  192
