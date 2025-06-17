@@ -32,9 +32,6 @@ wtstb           lda     <pia_data_a     ; is there a start bit?
                 lda     #%10000000      ; count with '1' bit in msb
 ttyrcv          jsr     delay           ; wait 1 bit time
                 rol     <pia_data_a     ; get next data bit (in carry)
-                pshs    cc
-                adcb    #0              ; add bit to parity check
-                puls    cc
                 rora                    ; combine with previous data
                 bcc     ttyrcv          ; continue until count bit
                                         ;   traverses data
