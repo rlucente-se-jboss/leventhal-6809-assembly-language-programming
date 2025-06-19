@@ -1,4 +1,4 @@
-; Problem 13-1. an on-off pushbutton
+; Problem 13-2. debouncing a switch in software
 
 ; Debounce a mechanical switch by waiting until two readings, taken
 ; a debounce time apart, give the same result. Assume that the debounce
