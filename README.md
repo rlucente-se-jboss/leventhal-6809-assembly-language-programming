@@ -128,3 +128,5 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 * [13-8. input from ADC converter](./chap13/13-8.asm?plaintext=1)
 * [13-9a. read data from a teletypewriter (TTY) with even parity check](./chap13/13-9a-parity-check.asm?plaintext=1)
 * [13-9a. read data from a teletypewriter (TTY) ](./chap13/13-9a.asm?plaintext=1)
+* [Problem 13-1. an on-off pushbutton](./chap13/problems/problem-13-1.asm?plaintext=1)
+* [Problem 13-1. an on-off pushbutton](./chap13/problems/problem-13-2.asm?plaintext=1)
