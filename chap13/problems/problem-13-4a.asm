@@ -27,9 +27,9 @@ pia_1_ctrl_b    equ     $23             ; PIA 1 port B control register
 pia_1_ddr_b     equ     $22             ; PIA 1 port B data direction register
 pia_1_data_b    equ     $22             ; PIA 1 port B data register
 
-pia_2_ctrl_a	equ	$25		; PIA 2 port A control register
-pia_2_ddr_a	equ	$24		; PIA 2 port A data direction register
-pia_2_data_a	equ	$24		; PIA 2 port A data register
+pia_2_ctrl_a    equ     $25             ; PIA 2 port A control register
+pia_2_ddr_a     equ     $24             ; PIA 2 port A data direction register
+pia_2_data_a    equ     $24             ; PIA 2 port A data register
 
                 org     $40
                 setdp   0
@@ -47,22 +47,22 @@ debouncedelay   fcb     $10             ; debounce delay in ms
                 clr     <pia_1_ddr_a    ; make all data lines inputs
                 sta     <pia_1_ctrl_a
 
-		clr	<pia_2_ctrl_a	; address data direction register
-		clr	<pia_2_ddr_a	; make all data lines inputs
-		sta	<pia_2_ctrl_a	; address data register
+                clr     <pia_2_ctrl_a   ; address data direction register
+                clr     <pia_2_ddr_a    ; make all data lines inputs
+                sta     <pia_2_ctrl_a   ; address data register
 
-getctrlswitch	clr	<pia_1_data_b	; all LEDs are off until control is on
+getctrlswitch   clr     <pia_1_data_b   ; all LEDs are off until control is on
 
-ctrlswitchloop	tst	<pia_2_data_a	; look at bit 7 of control switch
-		bmi	ctrlswitchloop	; wait until closed (=0)
+ctrlswitchloop  tst     <pia_2_data_a   ; look at bit 7 of control switch
+                bmi     ctrlswitchloop  ; wait until closed (=0)
 
-		bsr	delay		; small delay for debounce
+                bsr     delay           ; small delay for debounce
 
-		tst	<pia_2_data_a	; is control switch still closed?
-		bmi 	ctrlswitchloop	;   no, try again
+                tst     <pia_2_data_a   ; is control switch still closed?
+                bmi     ctrlswitchloop  ;   no, try again
 
                 leas    -1,s            ; dummy value to streamline switch
-					;   position loop
+                                        ;   position loop
 
 getswitchpos    leas    +1,s            ; fix stack
                 lda     <pia_1_data_a   ; read switch positions and save
