@@ -39,6 +39,7 @@ chkload         lda     <pia_data_a     ; read button position
                 lda     <pia_data_a     ; is switch still closed?
                 bmi     chkload         ;   no, try again
 
+                anda    #$0f            ; isolate the switch positions
                 sta     switchposition  ; save current switch position
 
                 bra     chkload
