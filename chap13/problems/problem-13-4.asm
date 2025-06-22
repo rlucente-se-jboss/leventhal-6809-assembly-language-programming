@@ -45,7 +45,7 @@ getswitchpos    lda     <pia_1_data_a   ; read switch positions and save
 
                 lda     <pia_1_data_a   ; are switch positions the same?
                 cmpa    ,s
-		puls	a
+                puls    a
                 bne     getswitchpos    ;   no, try again
 
                 coma                    ; complement so switch low is LED on
