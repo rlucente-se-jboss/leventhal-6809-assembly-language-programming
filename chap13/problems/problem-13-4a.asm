@@ -64,14 +64,14 @@ ctrlswitchloop  tst     <pia_2_data_a   ; look at bit 7 of control switch
                 leas    -1,s            ; dummy value to streamline switch
                                         ;   position loop
 
-getswitchpos    leas    +1,s            ; fix stack
-                lda     <pia_1_data_a   ; read switch positions and save
+getswitchpos    lda     <pia_1_data_a   ; read switch positions and save
                 pshs    a               ;   on stack
 
                 bsr     delay           ; small delay for debounce
 
                 lda     <pia_1_data_a   ; are switch positions the same?
                 cmpa    ,s
+		puls	a
                 bne     getswitchpos    ;   no, try again
 
                 coma                    ; complement so switch low is LED on

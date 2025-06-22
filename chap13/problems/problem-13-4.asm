@@ -38,16 +38,14 @@ debouncedelay   fcb     $10             ; debounce delay in ms
                 lda     #%00000100      ; address data register
                 sta     <pia_1_ctrl_b
 
-                leas    -1,s            ; dummy value to streamline loop
-
-getswitchpos    leas    +1,s            ; fix stack
-                lda     <pia_1_data_a   ; read switch positions and save
+getswitchpos    lda     <pia_1_data_a   ; read switch positions and save
                 pshs    a               ;   on stack
 
                 bsr     delay           ; small delay for debounce
 
                 lda     <pia_1_data_a   ; are switch positions the same?
                 cmpa    ,s
+		puls	a
                 bne     getswitchpos    ;   no, try again
 
                 coma                    ; complement so switch low is LED on
