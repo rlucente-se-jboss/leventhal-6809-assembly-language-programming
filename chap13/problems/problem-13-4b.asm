@@ -1,4 +1,4 @@
-; Problem 13-4a. record switch positions on lights (with pushbutton to invert)
+; Problem 13-4b. record switch positions on lights (with pushbutton to invert)
 
 ; A set of eight switches should have their positions reflected on
 ; eight LEDs. That is to say, if the switch is closed (bit = 0), the

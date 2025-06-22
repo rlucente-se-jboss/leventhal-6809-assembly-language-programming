@@ -133,3 +133,4 @@ e.g. [problem 8-5](chap08/problems/problem-8-5.asm?plain=1).
 * [Problem 13-3. control for a rotary switch](./chap13/problems/problem-13-3.asm?plaintext=1)
 * [Problem 13-4. record switch positions on lights](./chap13/problems/problem-13-4.asm?plaintext=1)
 * [Problem 13-4a. record switch positions on lights (with control switch)](./chap13/problems/problem-13-4a.asm?plaintext=1)
+* [Problem 13-4b. record switch positions on lights (with pushbutton to invert)](./chap13/problems/problem-13-4b.asm?plaintext=1)
